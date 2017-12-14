@@ -16,9 +16,7 @@ gulp.task('watch', function(){
     
     browserSync.init({
         notify: false,
-        server: {
-            baseDir: "Natours"
-        }
+        server: true
     });
     
     watch('./index.html', function(){
