@@ -18,6 +18,7 @@
         z-index: 2000;
         text-align: center;
         cursor: pointer;
+        transition: top .2s;
         
         @include respond(tab-port){
             top: 4rem;
@@ -27,6 +28,19 @@
         @include respond(phone){
             top: 3rem;
             right: 3rem;
+        }
+        
+        &:hover,
+        &:active {
+            top: 5.5rem;
+            
+            @include respond(tab-port){
+                top: 3rem;
+            }
+        
+            @include respond(phone){
+                top: 2rem;
+            }
         }
     }
 
